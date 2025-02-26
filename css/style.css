@@ -8,6 +8,13 @@ background-color:#d4b3ff;
   #comp{
     font-size:40px;
   }
+  .experience-timeline{
+  margin-left:10px;
+  }
+  .timeline-box{
+    margin-left:-39px;
+    width:98%;
+  }
 }
 body {
   margin: 0;
