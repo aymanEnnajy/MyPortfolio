@@ -1,5 +1,8 @@
-#togl{
+.light-mode #togl{
 background-color:#d4b3ff;
+}
+#togl{
+  background-color:#bdbdbd;
 }
 body {
   margin: 0;
