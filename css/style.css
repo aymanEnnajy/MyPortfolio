@@ -11,7 +11,7 @@ background-color:#d4b3ff;
 
 }
 @media(max-width:575px){
-    .experience-timeline{
+    #ligne-coupe{
   margin-left:12px;
   }
 }
