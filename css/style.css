@@ -27,7 +27,7 @@ background-color:#d4b3ff;
 }
 @media(max-width:1016px){
 #but-fr{
-  display:contents;
+  display:flex;
 }
 }
 
