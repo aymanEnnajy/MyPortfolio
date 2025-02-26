@@ -10,9 +10,9 @@ background-color:#d4b3ff;
   }
 
 }
-@media(max-width:690px){
+@media(max-width:768px){
     .experience-timeline{
-  margin-left:10px;
+  margin-left:12px;
   }
   .timeline-box{
     
