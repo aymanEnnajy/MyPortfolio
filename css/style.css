@@ -12,7 +12,7 @@ background-color:#d4b3ff;
 }
 @media(max-width:575px){
     #ligne-coupe{
-  margin-left:3px;
+  margin-left:10px;
   }
   .titre{
     display:none;
