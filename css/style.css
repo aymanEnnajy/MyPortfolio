@@ -4,8 +4,8 @@ background-color:#d4b3ff;
 #togl{
   background-color:#8d8a8a;
 }
-@media(max-width:791px;){
-  .animated-title{
+@media(max-width:791px){
+  #comp{
     font-size:12px;
   }
 }
