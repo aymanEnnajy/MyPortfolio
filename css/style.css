@@ -12,7 +12,7 @@ background-color:#d4b3ff;
 }
 @media(max-width:575px){
     #ligne-coupe{
-  margin-left:120px;
+  margin-left:12px;
   }
 }
 @media(max-width:768px){
