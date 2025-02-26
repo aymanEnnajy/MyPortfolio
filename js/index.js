@@ -1,9 +1,5 @@
 const body = document.body;
 
-document.querySelectorAll("#navbarNav a").forEach(link => {
-    link.addEventListener("click", closeMenu);
-});
-
 // Fonction pour basculer le menu
 function toggleMenu() {
   const menu = document.getElementById('navbarNav');
@@ -15,6 +11,12 @@ function closeMenu() {
   const menu = document.getElementById('navbarNav');
   menu.classList.remove('show');
 }
+
+// Fermer le menu quand on clique sur un lien
+document.querySelectorAll("#navbarNav a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+});
+
 
 // Fonction pour basculer le mode sombre/clair
 function toggleDarkMode() {
