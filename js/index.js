@@ -3,14 +3,21 @@ const body = document.body;
 // Fonction pour basculer le menu
 function toggleMenu() {
   const menu = document.getElementById('navbarNav');
-  menu.classList.toggle('show');
+  menu.classList.toggle('show'); // Toggle to show/hide the menu
 }
 
 // Fonction pour fermer le menu
 function closeMenu() {
   const menu = document.getElementById('navbarNav');
-  menu.classList.remove('show');
+  menu.classList.remove('show'); // Remove show class to hide the menu
 }
+
+// Add event listener to close the menu when clicking on any link
+const menuLinks = document.querySelectorAll('.menu a'); // Select all the links in the menu
+menuLinks.forEach(link => {
+  link.addEventListener('click', closeMenu); // Close menu when a link is clicked
+});
+
 
 // Fonction pour basculer le mode sombre/clair
 function toggleDarkMode() {
