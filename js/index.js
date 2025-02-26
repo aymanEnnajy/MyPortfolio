@@ -1,5 +1,9 @@
 const body = document.body;
 
+document.querySelectorAll("#navbarNav a").forEach(link => {
+    link.addEventListener("click", closeMenu);
+});
+
 // Fonction pour basculer le menu
 function toggleMenu() {
   const menu = document.getElementById('navbarNav');
