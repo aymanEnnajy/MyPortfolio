@@ -14,6 +14,9 @@ background-color:#d4b3ff;
     #ligne-coupe{
   margin-left:3px;
   }
+  .titre{
+    display:none;
+  }
   .timeline-box{
   width:89%;
     margin-left:1px;
@@ -22,6 +25,12 @@ background-color:#d4b3ff;
   width:89%;
   }
 }
+@media(max-width:575px){
+.buttons{
+  display:contents;
+}
+}
+
 @media(max-width:768px){
 
   .timeline-box{
