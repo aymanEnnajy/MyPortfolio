@@ -1,25 +1,25 @@
 const body = document.body;
 
-// Function to toggle the menu
+// Fonction pour basculer le menu
 function toggleMenu() {
   const menu = document.getElementById('navbarNav');
-  menu.classList.toggle('show'); // Toggle the 'show' class
+  menu.classList.toggle('show');
 }
 
-// Function to close the menu
+// Fonction pour fermer le menu
 function closeMenu() {
   const menu = document.getElementById('navbarNav');
-  menu.classList.remove('show'); // Close the menu by removing the 'show' class
+  menu.classList.remove('show');
 }
 
-// Function to toggle dark mode
+// Fonction pour basculer le mode sombre/clair
 function toggleDarkMode() {
   const icon = document.getElementById('theme-icon');
 
   body.classList.toggle('dark-mode');
   body.classList.toggle('light-mode');
 
-  // Save the current mode to localStorage
+  // Sauvegarder le mode actuel dans localStorage
   if (body.classList.contains('dark-mode')) {
     localStorage.setItem('theme', 'dark');
     icon.classList.replace('fa-sun', 'fa-moon');
@@ -29,9 +29,9 @@ function toggleDarkMode() {
   }
 }
 
-// Apply the saved theme when the page loads
+// Appliquer le thème enregistré ou définir Dark Mode par défaut
 function applySavedTheme() {
-  const savedTheme = localStorage.getItem('theme');
+  const savedTheme = localStorage.getItem('theme') || 'dark'; // Dark mode par défaut
   const icon = document.getElementById('theme-icon');
 
   if (savedTheme === 'dark') {
@@ -45,10 +45,10 @@ function applySavedTheme() {
   }
 }
 
-// Apply the saved theme when the page loads
+// Appliquer le thème au chargement de la page
 applySavedTheme();
 
-// Flip card functionality
+// Fonctionnalité de flip card
 document.querySelectorAll('.flip-btn').forEach(button => {
   button.addEventListener('click', (e) => {
     const cardInner = e.target.closest('.card-inner');
@@ -56,17 +56,18 @@ document.querySelectorAll('.flip-btn').forEach(button => {
   });
 });
 
-// Function to redirect to the French page
+// Fonction pour changer de langue en conservant le mode
 function redirectToFrenchPage() {
+  localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
   window.location.href = 'indexFr.html';
 }
 
-// Function to redirect to the English page
 function redirectToEnglishPage() {
+  localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
   window.location.href = 'index.html';
 }
 
-// Zoom functionality
+// Zoom d'image
 function openModal(imageSrc) {
   document.getElementById("imageModal").style.display = "flex";
   document.getElementById("modalImg").src = imageSrc;
@@ -76,10 +77,7 @@ function closeModal() {
   document.getElementById("imageModal").style.display = "none";
 }
 
-
-
-
-
+// Bouton retour en haut
 const goUpBtn = document.getElementById("goUpBtn");
 
 window.addEventListener("scroll", function () {
