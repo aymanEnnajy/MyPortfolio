@@ -12,12 +12,6 @@ function closeMenu() {
   menu.classList.remove('show');
 }
 
-// Fermer le menu quand on clique sur un lien
-document.querySelectorAll("#navbarNav a").forEach(link => {
-    link.addEventListener("click", closeMenu);
-});
-
-
 // Fonction pour basculer le mode sombre/clair
 function toggleDarkMode() {
   const icon = document.getElementById('theme-icon');
