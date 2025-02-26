@@ -18,7 +18,7 @@ background-color:#d4b3ff;
 @media(max-width:768px){
 
   .timeline-box{
-    
+    margin-left:-25px;
     width:100%;
   }
 }
