@@ -1,7 +1,7 @@
 .light-mode #togl{
 background-color:#d4b3ff;
 }
-#togl{
+.dark-mode #togl{
   background-color: #8d8a8a;
 }
 body {
