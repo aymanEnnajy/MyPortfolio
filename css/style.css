@@ -169,6 +169,7 @@ body {
     width: 100%; /* Ensure full width for buttons */
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
   }
 
   .buttons button {
