@@ -1,9 +1,7 @@
 .light-mode #togl{
 background-color:#d4b3ff;
 }
-.dark-mode #togl{
-  background-color: #8d8a8a;
-}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
