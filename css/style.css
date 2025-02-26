@@ -117,7 +117,7 @@ body {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .close-menu-btn{
     display: flex;
 }
@@ -954,3 +954,5 @@ to {
 .close:hover {
   color: red;
 }
+
+
