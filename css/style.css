@@ -886,7 +886,8 @@ to {
 }
 
 .project-card {
-  background: #1e1e1e;
+  background: #007bff;
+  height:350px;
   border-radius: 15px;
   overflow: hidden;
   width: 100%;
