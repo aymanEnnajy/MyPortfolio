@@ -999,3 +999,54 @@ to {
 }
 
 
+#btn-send span{
+  display: inline-block;
+            animation: waveText 1.5s infinite ease-in-out;
+            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+@keyframes waveText {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+#btn-send:hover span {
+  transform: translateX(50px);
+  opacity: 0;
+}
+#btn-send:hover::after {
+  content: ">>";
+  position: absolute;
+  right: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+#btn-send:hover::after {
+  content: ">>";
+  position: absolute;
+  right: 120px;
+  opacity: 1;
+  animation: moveArrow 1s infinite alternate ease-in-out;
+}
+@keyframes moveArrow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(10px); }
+}
+#btn-send:hover {
+  background: #9ecafa;
+}
+#btn-send{
+  width: 100%;
+  
+  position: relative;
+  padding: 12px 24px;
+  font-size: 19px;
+  color: white;
+  background: #007BFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: bold;
+  overflow: hidden;
+  transition: background 0.3s ease-in-out;
+}
