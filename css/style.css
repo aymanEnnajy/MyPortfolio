@@ -2081,3 +2081,8 @@ to {
 #but-more:hover{
   background-color: #84bdfa;
 }
+
+
+.project-card img{
+  cursor: context-menu;
+}
