@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <title>Portfolio - EMA</title>
+  <link rel="icon" type="image/x-icon" href="images/logo.png" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/lumiere_mode.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body class="dark-mode">
+  <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <a href="#" class="navbar-brand"><img src="images/logo.png" alt="Logo"></a>
+    <button class="navbar-toggler" id="togl" type="button" onclick="toggleMenu()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="menu" id="navbarNav">
+      <button style="font-size:52px;" class="close-menu-btn" onclick="closeMenu()">×</button>
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
+      <div class="buttons">
+        <button id="theme-toggle" onclick="toggleDarkMode()">
+          <i id="theme-icon" class="fas fa-moon"></i>
+        </button>
+        <button id="redirectButton" onclick="redirectToFrenchPage()"> <i class="fa-solid fa-language"></i> FR </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Sections -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <div class="text-container">
+        <h1 style="padding-top:12px;" class="animated-text">Mohamed Ayman Ennajy</h1>
+        <h2 class="animated-subtitle">Full Stack Developer</h2>
+        <p class="animated-description">I am a dynamic and user-friendly web solution specialist with a passion for writing using JavaScript, React,
+           PHP, and Python. My experience covers e-commerce, database management, and responsive design.
+           I am always looking to develop the best possible applications that are high-performance as well as scalable.</p>
+        <a href="#contact" class="cta-button">Contact Me</a>
+      </div>
+      <div class="image-container">
+        <img src="images/Design sans titre (33).png" alt="Ayman Ennajy" class="profile-image">
+      </div>
+    </div>
+    <div class="dev-icons">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js-square"></i>
+      <i class="fab fa-react"></i>
+      <i class="fab fa-node-js"></i>
+      <!-- Ajoutez d'autres icônes ici selon vos besoins -->
+    </div>
+    
+    <canvas id="particles-js"></canvas>
+    
+  </section>
+
+  <section id="education" class="section-education">
+    <div class="education-content">
+     
+      <!-- Contenu de la section education -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+               <!-- Titre animé avec sous-ligne -->
+              <h1 class="animated-title">
+                <span class="title-text">Education</span>
+                <span class="underline"></span>
+              </h1>
+          </div>
+          <div class="education-grid">
+
+          
+          <div id="carte" class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="education-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="div-ico">
+                    <i id="icon-education" class="fa-solid fa-laptop-code animated-icon"></i>
+                  </div>
+                  <h2>specialized technician in IT development</h2>
+                  <p><strong>2022 - 2024</strong></p>
+                  <button class="flip-btn">Voir plus</button>
+                </div>
+                <div class="card-back">
+                  <p> This diploma gave me a solid training in information technology, it made me passionate about software and website development, it also gave me practical experience through internships which strengthened my technical and professional skills.</p>
+                  <button class="flip-btn">Retour</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="carte" class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="education-card">
+              <div class="card-inner">
+                <div class="card-front">
+                 <div class="div-ico"  id="ico-div1">
+                  <i id="icon-education"class="fa-brands fa-python"></i>
+                 </div> 
+                 
+                  <h2>Programming in Python</h2>
+                  <p><strong>META | 2023</strong></p>
+                  <button id="python-but" class="flip-btn">Voir plus</button>
+                </div>
+                <div class="card-back">
+                  <p style="text-align: left;">I earned the "Programming in Python" certification from Meta, showcasing my proficiency in writing efficient code, implementing algorithms, using Python libraries, and solving software development problems.
+
+
+                  </p>
+                  <button class="flip-btn">Retour</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="carte" class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="education-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="div-ico" >
+                    <i id="icon-education" class="fa-solid fa-code animated-icon"></i>
+
+                  </div>
+                  <h2>HTML, CSS, and Javascript for Web Developers</h2>
+                  <p><strong>Johns Hopkins University  | 2023</strong></p>
+                  <button class="flip-btn">Voir plus</button>
+                </div>
+                <div class="card-back">
+                  <p style="text-align: left;">This certification provided comprehensive training in essential web development technologies. Key skills acquired include:
+                    <div style="text-align: justify;">
+                      <li> html</li>
+                      <li> css</li>
+                      <li> javascript</li>
+                     </div>
+                   
+                  
+                    
+                    Strengthened front-end development capabilities, enabling the creation of modern, user-friendly websites.</p>
+                  <button class="flip-btn">Retour</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="carte" class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="education-card">
+              <div class="card-inner">
+                <div class="card-front">
+                 <div class="div-ico" id="backend-icon" >
+                  <i id="icon-education" class="fa-solid fa-server animated-icon"></i>
+                 </div> 
+                  <h2>Introduction to Back-End Development</h2>
+                  <p><strong>META | 2023</strong></p>
+                  <button class="flip-btn">Voir plus</button>
+                </div>
+                <div class="card-back">
+                  <p>This certification validates expertise in back-end development, including:
+                    <div style="text-align: left;">
+                      <li>Server-side programming</li>
+                      <li>Database management</li>
+                      <li>API development</li>
+                      <li>Security and performance optimization</li>
+                    </div>
+                  </p>
+                  <button class="flip-btn">Retour</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="carte" class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="education-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="icon-div">
+                  <i id="icon-education"  class="fab fa-js"></i></div>
+                  <h2>JavaScript Intermediate   </h2>
+                  <p><strong>Solearn-2024</strong></p>
+                  <button class="flip-btn">Voir plus</button>
+                </div>
+                <div class="card-back">
+                  <p>The "JavaScript Intermediate" certificate validates an intermediate mastery of JavaScript, including OOP, asynchronous programming, advanced DOM manipulation, and modern ES6+ features.                  </p>
+                  <button class="flip-btn">Retour</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="carte" class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <div class="education-card">
+              <div class="card-inner">
+                <div class="card-front">
+                  <div  class="icon-div">
+                    <i id="icon-education"  class="fa-brands fa-react"></i>
+                  </div>
+                  
+                  <h2>Advanced React </h2>
+                  <p><strong>META-2024</strong></p>
+                  <button class="flip-btn"  id="but-react">Voir plus</button>
+                </div>
+                <div class="card-back">
+                  <p>The "React Advanced" certificate from Meta demonstrates expertise in building complex React applications, including state management, performance optimization, advanced hooks, and best practices for scalable front-end development. 🚀
+                  </p>
+                  <button class="flip-btn">Retour</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+  
+
+  <section id="experience" class="section-experience">
+    <div class="experience-content" id="containerTitle-experince">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="animated-title">
+                        <span class="title-text">Expérience</span>
+                        <span class="underline"></span>
+                    </h1>
+                </div>
+                <div class="experience-timeline" id="ligne-coupe">
+
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-box">
+                        <h2>WordPress Developer: freelance</h2>
+                        <p>"AjouterAuPanier" is an e-commerce site I developed by integrating a responsive user interface and an online cart management system. I created the front-end (HTML, CSS) and back-end (PHP, MySQL) to manage products, orders, and users, while optimizing the database for smooth performance.
+                        </p>
+                        <span class="year">2024-10-30 <span style="font-size: 32px;">--</span><i class="fas fa-greater-than"></i> 5-12-2024</span>
+                    </div>
+                </div>
+
+
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-box">
+                            <h2>Agent Recenseur - Recensement Général de la Population et de l'Habitat: HCP, Maroc</h2>
+                            <p>I worked as a Census Agent during the General Population and Housing Census, where I collected and recorded demographic and socio-economic data, ensuring accuracy and facilitating communication with residents.
+                            </p>
+                            <span class="year">2024-15-08  <span style="font-size: 32px;">--</span><i class="fas fa-greater-than"></i> 31-09-2024</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-box">
+                            <h2>Full- stack Developper: CESARO </h2>
+                            <p>Prenant to charge the creation of web sites, development front-end (HTML, CSS, Bootstrap) and back-end (PHP, MySQL). Prenant to charge the creation of web sites, development front-end (HTML, CSS, Bootstrap) and back-end (PHP, MySQL).</p>
+                            <span class="year">01-01-2024<span style="font-size: 33px;">--</span><i class="fas fa-greater-than"></i>20-05-2024</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-box">
+                            <h2>front-end Developer: ICF</h2>
+                            <p>As a Front-End Developer at ICF, I was responsible for creating interactive and responsive user interfaces using HTML, CSS, and JavaScript. I collaborated with the back-end team to integrate features and optimize the user experience across different devices and platforms.                            </p>
+                            <span class="year">15-08-2023 <span style="font-size: 33px;">--</span><i class="fas fa-greater-than"></i>30-09-2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+      .section-experience {
+          padding: 50px 0;
+          background: linear-gradient(135deg, #141414, #1e1e1e);
+          color: #fff;
+      }
+      
+      .experience-timeline {
+          position: relative;
+          max-width: 800px;
+          margin: 0 auto;
+          padding-left: 30px;
+          border-left: 3px dashed #4a90e2;
+          animation: fadeInUp 1.5s ease-in-out;
+      }
+      
+      .timeline-item {
+          position: relative;
+          padding: 20px 0 20px 30px;
+          font-size: 18px;
+          opacity: 0;
+          animation: slideIn 1.5s ease-in-out forwards;
+      }
+      
+      .timeline-item:nth-child(1) { animation-delay: 0.3s; }
+      .timeline-item:nth-child(2) { animation-delay: 0.6s; }
+      .timeline-item:nth-child(3) { animation-delay: 0.9s; }
+      
+      .timeline-dot {
+          width: 20px;
+          height: 20px;
+          background: #4a90e2;
+          border-radius: 50%;
+          position: absolute;
+          left: -40px;
+          top: 50%;
+          transform: translateY(-50%);
+          box-shadow: 0 0 15px rgba(74, 144, 226, 0.8);
+          animation: pulse 1.5s infinite alternate;
+      }
+      
+      .timeline-box {
+          background: rgba(255, 255, 255, 0.1);
+          padding: 20px;
+          border-radius: 15px;
+          border: 2px solid rgba(74, 144, 226, 0.5);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+          position: relative;
+      }
+      
+      .timeline-box:hover {
+          transform: scale(1.05);
+          box-shadow: 0px 6px 20px rgba(74, 144, 226, 0.5);
+      }
+      
+      .year {
+          display: block;
+          margin-top: 5px;
+          font-size: 22px;
+          color: #4a90e2;
+          font-weight: bold;
+      }
+      
+      @keyframes slideIn {
+          from { opacity: 0; transform: translateX(-20px); }
+          to { opacity: 1; transform: translateX(0); }
+      }
+      
+      @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+      }
+      
+      @keyframes pulse {
+          from { transform: scale(1); opacity: 1; }
+          to { transform: scale(1.2); opacity: 0.7; }
+      }
+      </style>
+</section>
+
+
+<section id="education" class="section-education">
+  <div class="education-content">
+   
+    <!-- Contenu de la section education -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+             <!-- Titre animé avec sous-ligne -->
+            <h1 class="animated-title">
+              <span class="title-text">Skills</span>
+              <span class="underline"></span>
+            </h1>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="titre">
+            <h2>Front-end skills</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="titre">
+            <h2>Back-end skills</h2>
+          </div>
+        </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="icon-skills">
+              <i class="fab fa-html5"></i> <h3 class="nom-lang">Html</h3> 
+              
+            </div>
+            <div class="bar-total">
+              <div class="progress-fill" style="width: 100%;"></div>
+          </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="icon-skills">
+              <i class="fab fa-php"></i> <h3 class="nom-lang">Php</h3>
+            </div>
+            <div class="bar-total">
+              <div class="progress-fill" style="width: 85%;"></div>
+            </div>
+          
+          </div>
+
+          <div id="div-skills-space" class="col-lg-6 col-md-6 col-sm-6">
+            <div class="icon-skills">
+              <i class="fab fa-css3-alt"></i> <h3 class="nom-lang">Css</h3> 
+              
+            </div>
+            <div class="bar-total">
+              <div class="progress-fill" style="width: 95%;"></div>
+          </div>
+          </div>
+
+          <div id="div-skills-space" class="col-lg-6 col-md-6 col-sm-6">
+            <div class="icon-skills">
+              <i class="fab fa-python"></i> <h3 class="nom-lang">Python</h3>
+            </div>
+            <div class="bar-total">
+              <div class="progress-fill" style="width: 70%;"></div>
+            </div>
+          
+          </div>
+
+          <div id="div-skills-space" class="col-lg-6 col-md-6 col-sm-6">
+            <div class="icon-skills">
+              <i class="fab fa-js"></i> <h3 class="nom-lang">JavaScript</h3>
+            </div>
+            <div class="bar-total">
+              <div class="progress-fill" style="width: 80%;"></div>
+          </div>
+          
+          </div>
+
+          <div id="div-skills-space" class="col-lg-6 col-md-6 col-sm-6">
+            <div class="icon-skills">
+              <i class="fa fa-database"></i> <h3 class="nom-lang">MySQL</h3>
+            </div>
+            <div class="bar-total">
+              <div class="progress-fill" style="width: 90%;"></div>
+          </div>
+          
+          </div>
+
+
+          <div id="div-skills-space" class="col-lg-6 col-md-6 col-sm-6">
+            <div class="icon-skills">
+              <i class="fa-brands fa-bootstrap"></i> <h3 class="nom-lang">Bootstrap</h3>
+            </div>
+            <div class="bar-total">
+              <div class="progress-fill" style="width:50%;"></div>
+          </div>
+          
+          </div>
+
+
+          <div id="div-skills-space" class="col-lg-6 col-md-6 col-sm-6">
+            <div class="icon-skills">
+              <i class="fab fa-java"></i> <h3 class="nom-lang">Java </h3>
+            </div>
+            <div class="bar-total">
+              <div class="progress-fill" style="width: 50%;"></div>
+          </div>
+          
+          </div>
+          
+        
+      </div>
+    </div>
+  
+  </div>
+  
+  
+</section>
+
+<section id="project">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Titre animé avec sous-ligne -->
+       <h1 style="padding-top: 50px;" class="animated-title">
+         <span class="title-text">Some of my works</span>
+         <span class="underline"></span>
+       </h1>
+   </div>
+
+      <div id="proj-div" class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <img src="images/holabouskoura.png" alt="E-commerce">
+          <span class="zoom-icon" onclick="openModal('images/holabouskoura.png')"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+          <div class="card-content">
+            <a id="but-go" href="http://www.holabouskoura.ma">
+              <h3>Holabouskoura </h3></a>
+              <p>electronic newspaper</p>
+                           <button><a id="but-go" href="http://www.holabouskoura.ma"> Visit the website</a></button>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="proj-div" class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <img src="images/cesarofull.png" alt="E-commerce">
+          <span class="zoom-icon" onclick="openModal('images/cesarofull.png')"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+          <div class="card-content">
+            <a id="but-go" href="http://ennajy-ma.free.nf/index.php">
+              <h3>Mister luxury Auto </h3></a>
+              <p>electronic newspaper</p>
+                           <button><a id="but-go" href="http://www.misterluxuryauto.ma"> Visit the website</a></button>
+
+          </div>
+        </div>
+      </div>
+
+
+     
+
+      <div id="proj-div" class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <img src="images/extra.png" alt="E-commerce">
+          <span class="zoom-icon" onclick="openModal('images/extra.png')"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+          <div class="card-content">
+            <a id="but-go" href="https://extravilla-marrakech.vercel.app/">
+              <h3>ExtraVilla Marrakech    </h3></a>
+              <p>Real estate website</p>
+                           <button><a id="but-go" href="https://extravilla-marrakech.vercel.app/"> Visit the website</a></button>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="proj-div" class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <img src="images/empire.png" alt="E-commerce">
+          <span class="zoom-icon" onclick="openModal('images/empire.png')"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+          <div class="card-content">
+            <a id="but-go" href="https://aymanennajy.github.io/empire-dental/">
+              <h3>Empire dental center </h3></a>
+              <p>dental center website</p>
+                           <button><a id="but-go" href="https://aymanennajy.github.io/empire-dental/"> Visit the website</a></button>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="proj-div" class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <img src="images/ponctvoyage.png" alt="E-commerce">
+          <span class="zoom-icon" onclick="openModal('images/ponctvoyage.png')"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+          <div class="card-content">
+            <a id="but-go" href="https://aymanennajy.github.io/ponctuelVoyage/">
+              <h3>Ponctuel Voyage </h3></a>
+              <p>Travel website</p>
+                           <button><a id="but-go" href="https://aymanennajy.github.io/ponctuelVoyage/"> Visit the website</a></button>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="proj-div" class="col-md-4 col-sm-6 col-xs-12">
+        <div class="project-card">
+          <img src="images/ezhorizon.png" alt="E-commerce">
+          <span class="zoom-icon" onclick="openModal('images/ezhorizon.png')"><i class="fa fa-search-plus" aria-hidden="true"></i></span>
+          <div class="card-content">
+            <a id="but-go" href="https://aymanennajy.github.io/ezhorizon/">
+              <h3> Ez HORIZONS 
+                </h3></a>
+              <p>Real estate website </p>
+              <button><a id="but-go" href="https://aymanennajy.github.io/ezhorizon/"> Visit the website</a></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div id="div-but-more">
+    <button id="but-more"><a id="but-go" href="project.html"> see more</a></button>
+  </div>
+
+  <!-- Modale pour afficher l'image en plein écran -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+<br>
+
+  
+</section>
+
+
+
+<section id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" style="padding-top: 50px; padding-bottom:20px;">
+        <h1 class="animated-title">
+          <span class="title-text">Contact</span>
+          <span class="underline"></span>
+        </h1>
+      </div>
+      <div class="container-3d">
+        <!-- Formulaire -->
+        <div class="form-card">
+          
+          <form action="https://formspree.io/f/mkgolyzv" method="POST">
+            <br>
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="email">E-mail address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your e-mail" required>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="message">Your message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block" id="btn-send"><span>Send</span></button>
+          </form>
+          
+        </div>
+    
+        <!-- Coordonnées -->
+        <div class="contact-info">
+          <h4>Our contact details:</h4>
+
+          <p><strong><i class="fa-solid fa-location-dot"></i> Adress :</strong> Marrakech, Maroc</p>
+          <p><strong><i class="fa-solid fa-phone"></i> Phone :</strong> +212 701 265 968 </p>
+          <p><strong><i class="fa fa-envelope" aria-hidden="true"></i>   Email :</strong> ayman93011@gmail.com</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <br> <br>
+</section>
+
+  <footer>
+    <span>Ennajy Mohamed Ayman </span> &copy; <span> All right reserved</span>
+  </footer>
+<!-- FontAwesome pour les icônes -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+<!-- Bouton Go Up -->
+<button id="goUpBtn">
+  <i class="fas fa-angle-up"></i>
+</button>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

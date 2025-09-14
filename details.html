@@ -1,0 +1,271 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire 3D Animé</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container-3d {
+      display: flex;
+      width: 80%;
+      perspective: 1000px;
+    }
+
+    .form-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      width: 60%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transform-style: preserve-3d;
+      transform: rotateY(-5deg);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .form-card:hover {
+      transform: rotateY(0deg) scale(1.03);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-info {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      border-radius: 15px;
+      padding: 30px;
+      width: 40%;
+      margin-left: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-info h4 {
+      color: #74ebd5;
+      margin-bottom: 15px;
+    }
+
+    .form-header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #74ebd5, #007bff);
+      border: none;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #007bff, #74ebd5);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 992px) {
+      .container-3d {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-card, .contact-info {
+        width: 90%;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-3d">
+    <!-- Formulaire -->
+    <div class="form-card">
+      <div class="form-header">
+        <h4>Contactez-nous</h4>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Entrez votre e-mail" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Votre message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Entrez votre message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+      </form>
+    </div>
+
+    <!-- Coordonnées -->
+    <div class="contact-info">
+      <h4>Nos coordonnées</h4>
+      <p><strong>📍 Adresse :</strong> 123 Rue de l'Exemple, Casablanca, Maroc</p>
+      <p><strong>📞 Téléphone :</strong> +212 123 456 789</p>
+      <p><strong>✉ Email :</strong> contact@exemple.com</p>
+      <p><strong>⏰ Heures :</strong> Lundi - Vendredi: 9h00 - 18h00</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire 3D Animé</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container-3d {
+      display: flex;
+      width: 80%;
+      perspective: 1000px;
+    }
+
+    .form-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      padding: 30px;
+      width: 60%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transform-style: preserve-3d;
+      transform: rotateY(-5deg);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .form-card:hover {
+      transform: rotateY(0deg) scale(1.03);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .contact-info {
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      border-radius: 15px;
+      padding: 30px;
+      width: 40%;
+      margin-left: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-info h4 {
+      color: #74ebd5;
+      margin-bottom: 15px;
+    }
+
+    .form-header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #74ebd5, #007bff);
+      border: none;
+      transition: 0.3s ease-in-out;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #007bff, #74ebd5);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 992px) {
+      .container-3d {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .form-card, .contact-info {
+        width: 90%;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-3d">
+    <!-- Formulaire -->
+    <div class="form-card">
+      <div class="form-header">
+        <h4>Contactez-nous</h4>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" class="form-control" id="name" placeholder="Entrez votre nom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Entrez votre e-mail" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Votre message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Entrez votre message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Envoyer</button>
+      </form>
+    </div>
+
+    <!-- Coordonnées -->
+    <div class="contact-info">
+      <h4>Nos coordonnées</h4>
+      <p><strong>📍 Adresse :</strong> 123 Rue de l'Exemple, Casablanca, Maroc</p>
+      <p><strong>📞 Téléphone :</strong> +212 123 456 789</p>
+      <p><strong>✉ Email :</strong> contact@exemple.com</p>
+      <p><strong>⏰ Heures :</strong> Lundi - Vendredi: 9h00 - 18h00</p>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+>>>>>>> 06ed686 (site modifié avec l'ajoute d'un derniere projet realisé)
